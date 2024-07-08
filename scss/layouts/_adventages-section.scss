@@ -1,0 +1,38 @@
+.advantages-section {
+  padding-top: 104px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 176px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    max-width: 444px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 auto 48px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 56px;
+    }
+  }
+
+  &__list-item {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 112px) / 3);
+    }
+  }
+}

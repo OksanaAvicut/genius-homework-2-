@@ -1,0 +1,73 @@
+.modal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  max-height: 680px;
+  padding: 24px;
+  background-color: var(--black-primary-color);
+  border-radius: 48px;
+  background-image: url("../images/modal-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 44px;
+    width: 164px;
+    height: 100px;
+    position: absolute;
+    background-image: url(../images/decor-medicine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    padding: 0;
+    border: none;
+    fill: transparent;
+    stroke: var(--white-primary-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      stroke: var(--blue-primary-color);
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-family: "Play", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--white-primary-color);
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+      font-size: 64px;
+    }
+  }
+
+  &__text {
+    max-width: 280px;
+    margin: 0 auto 32px;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--white-primary-color);
+  }
+}

@@ -1,0 +1,8 @@
+.icon {
+  fill: var(--black-primary-color);
+  transition: fill 0.2s ease-in;
+}
+
+.icon:hover {
+  fill: var(--blue-primary-color);
+}

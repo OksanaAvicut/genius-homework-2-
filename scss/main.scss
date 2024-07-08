@@ -1,0 +1,35 @@
+/* font/variables */
+@import "./utils/fonts";
+@import "./utils/variables";
+
+/* base styles */
+@import "./base";
+
+/* Utils */
+@import "./utils/utils";
+
+/* text style */
+@import "./utils/texts";
+
+/* all layouts  */
+@import "./layouts/section";
+@import "./layouts/container";
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/info-section";
+@import "./layouts/adventages-section";
+@import "./layouts/servise-section";
+@import "./layouts/contact-section";
+@import "./layouts/backdrop";
+@import "./layouts/footer";
+@import "./layouts/modal";
+@import "./layouts/mobile-menu";
+
+/* components*/
+@import "./components/service-card";
+@import "./components/adventages-card";
+@import "./components/button";
+@import "./components/carousel-button";
+@import "./components/icons";
+@import "./components/form";
+@import "./components/pagination";

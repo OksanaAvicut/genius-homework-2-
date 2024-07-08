@@ -1,0 +1,91 @@
+.form {
+  flex-basis: 40%;
+  // max-width: 422px;
+  max-height: 481px;
+  padding: 42px 24px;
+  text-align: center;
+  border-radius: 32px;
+  background-color: var(--black-primary-color);
+  background-image: url("../images/modal-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: $bp-desktop) {
+    overflow: auto;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 48px 58px;
+  }
+
+  &--modal {
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.17;
+    max-width: 280px;
+    margin: 0 auto 32px;
+    color: var(--white-primary-color);
+  }
+
+  &__field {
+    margin-bottom: 24px;
+    &--contact-field {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 18px 32px;
+    color: var(--white-primary-color);
+    background-color: transparent;
+    border: 2px solid var(--grey-secondary-color);
+    border-radius: 32px;
+
+    &:focus {
+      background-color: var(--grey-secondary-color);
+      border-color: var(--grey-secondary-color);
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 13px;
+      line-height: 1.17;
+      color: var(--white-primary-color);
+    }
+  }
+
+  &__button {
+    display: block;
+    line-height: normal;
+    margin: 0 auto 8px;
+
+    &:hover {
+      color: var(--white-primary-color);
+      background-color: var(--grey-secondary-color);
+    }
+  }
+
+  &__terms {
+    max-width: 213px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--grey-secondary-color);
+  }
+
+  &__terms-link {
+    color: var(--grey-secondary-color);
+    text-underline-offset: 2px;
+  }
+}

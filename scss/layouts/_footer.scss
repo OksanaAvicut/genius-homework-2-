@@ -1,0 +1,121 @@
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-color: var(--black-primary-color);
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px 0;
+  }
+
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      bottom: 0;
+      right: 0;
+      width: 220px;
+      height: 150px;
+      position: absolute;
+      background-image: url("../images/decor-medicine.png");
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &,
+  &__nav,
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+      gap: 40px;
+    }
+  }
+
+  &__adress {
+    position: relative;
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__link {
+    margin-bottom: 16px;
+    color: var(--white-primary-color);
+    font-size: 14px;
+    line-height: 1.17;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: var(--blue-primary-color);
+    }
+
+    &--no-margin {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icons {
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      bottom: -30px;
+    }
+  }
+
+  & &__icon {
+    fill: var(--white-primary-color);
+  }
+
+  &__address-list,
+  &__adress-info {
+    flex-basis: 50%;
+  }
+
+  &__address-list {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__copy-right {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.17;
+    color: var(--grey-secondary-color);
+  }
+}
